@@ -18,6 +18,20 @@ public class ArrayActivity extends AppCompatActivity {
 
         //continue view the code in the worksheet
 
+        String[] fruits;
+        fruits=new String[3];
+        fruits[0]="apple";
+        fruits[1]="banana";
+        fruits[2]="cherry";
+
+        String text= "Fruits\n";
+        text+="====\n";
+
+        for (int i=0;i<fruits.length;i++)
+        {
+            text+=fruits[i]+"\n";
+        }
+        tv.setText(text);
 
 
     }
